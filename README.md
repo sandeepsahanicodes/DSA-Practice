@@ -1,2 +1,4 @@
 # Data-Structure-Algorithm
-Practicing Data Structure &amp; Algorithm With Java.
+
+## Week-1
+- Day 1: Basics Time Complexity and Space Complexity.
