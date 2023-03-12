@@ -27,6 +27,11 @@ public class Message
     static void message4()
     {
         System.out.println("Hello World");
+        message5();
+    }
+    static void message5()
+    {
+        System.out.println("Hello World");
     }
     
 }
