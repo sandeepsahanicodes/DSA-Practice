@@ -14,7 +14,7 @@ class Num
        }
        else
        {
-           return sum(num-1);
+           return sum(num-1) + sum(num-2);
        }
     }
 }
