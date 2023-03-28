@@ -8,7 +8,7 @@ public class Factorial
 
     public static int factorial(int number)
     {
-        if(number<2)
+        if(number<=1)
         {
              return number;
         }
