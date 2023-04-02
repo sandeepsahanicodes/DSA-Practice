@@ -4,6 +4,8 @@ public class reverseNumber
     {
         int number = 1024;
         reverse(number);
+        reverse(number);
+
     }
 
     public static void reverse(int number)
