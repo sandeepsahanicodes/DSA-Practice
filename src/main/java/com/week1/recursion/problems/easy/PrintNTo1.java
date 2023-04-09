@@ -1,4 +1,6 @@
 // Prints numbers from n to 1
+package main.java.com.week1.recursion.problems.easy;
+
 public class PrintNTo1 
 {
     public static void main(String[] args) 

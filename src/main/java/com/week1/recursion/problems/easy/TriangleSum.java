@@ -1,3 +1,4 @@
+package main.java.com.week1.recursion.problems.easy;
 import java.util.Arrays;
 public class TriangleSum
 {

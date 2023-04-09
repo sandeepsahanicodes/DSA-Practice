@@ -1,3 +1,5 @@
+package main.java.com.week1.recursion.problems.easy;
+
 // Find the nth fibonacchi number.
 public class FibonacciNumber 
 {

@@ -1,3 +1,5 @@
+package main.java.com.week1.recursion.problems.easy;
+
 public class ProductOfDigits 
 {
     public static void main(String[] args) 

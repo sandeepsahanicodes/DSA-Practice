@@ -1,5 +1,4 @@
-
-import java.io.*;
+package main.java.com.week1.recursion.problems.easy;
 
 class Palindrome
 {

@@ -1,3 +1,4 @@
+package main.java.com.week1.recursion.problems.easy;
 public class Sample 
 {
     public static void main(String[] args) 

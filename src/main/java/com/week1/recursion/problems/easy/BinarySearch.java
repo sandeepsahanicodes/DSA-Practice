@@ -1,3 +1,5 @@
+package main.java.com.week1.recursion.problems.easy;
+
 // Implementation of binary search algorithm using recursion.
 public class BinarySearch 
 {

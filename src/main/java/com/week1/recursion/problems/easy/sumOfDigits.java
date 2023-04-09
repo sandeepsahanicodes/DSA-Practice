@@ -1,3 +1,5 @@
+package main.java.com.week1.recursion.problems.easy;
+
 public class sumOfDigits 
 {
     public static void main(String[] args) 
@@ -15,7 +17,7 @@ public class sumOfDigits
         }
         else
         {
-            return sumOfDigits(number/10) + number%10;
+            return sumOfDigit(number/10) + number%10;
         }
     }
 }
