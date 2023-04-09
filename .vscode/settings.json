@@ -2,5 +2,7 @@
     "files.associations": {
         "ostream": "cpp"
     },
-    "java.project.sourcePaths": []
+    "java.project.sourcePaths": [
+        "src"
+    ]
 }

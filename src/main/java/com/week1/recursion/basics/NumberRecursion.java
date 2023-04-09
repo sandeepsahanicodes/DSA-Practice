@@ -1,3 +1,5 @@
+package main.java.com.week1.recursion.basics;
+
 // Number example with recursion
 class NumberRecursion
 {
