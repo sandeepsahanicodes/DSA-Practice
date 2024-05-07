@@ -6,6 +6,7 @@
  * Step 2: largest = arr[n-1]
  * 
  * Time Complexity: O(nlogn)
+ * Space Complexity: O(n)
 */
 
 import java.util.Arrays;
