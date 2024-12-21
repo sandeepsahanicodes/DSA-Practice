@@ -187,6 +187,11 @@ public class Patterns {
             System.out.println();
         }
     }
+    // 1        1
+    // 12      21
+    // 123    321
+    // 1234  4321
+    // 1234554321
         static public void pattern12(int row) {
             int space = 2*(row-1);
             
@@ -207,8 +212,22 @@ public class Patterns {
                  System.out.println();
                  space -= 2;
             }
-
-    }
+        }
+        // 1 
+        // 2 3 
+        // 4 5 6 
+        // 7 8 9 10 
+        // 11 12 13 14 15 
+        public static void pattern13(int row) {
+            int number = 1; 
+            for (int i = 1; i <=row; i++) {
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(number + " ");
+                    number++;
+                }
+                System.out.println();
+             }
+        }
 
     public static void main(String[] args) {
         int t, row;
@@ -218,7 +237,7 @@ public class Patterns {
         for (int i = 0; i < t; i++) {
             System.out.print("Enter row for test case" + (i + 1) + ":");
             row = sc.nextInt();
-            pattern12(row);
+            pattern13(row);
         }
     }
 }
