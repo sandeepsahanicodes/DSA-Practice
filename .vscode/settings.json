@@ -3,6 +3,6 @@
         "ostream": "cpp"
     },
     "java.project.sourcePaths": [
-        "src"
+        "Patterns"
     ]
 }
