@@ -10,7 +10,7 @@
 */
 
 import java.util.Arrays;
-class LargestElementB {
+class LargestElementBF {
     static int findLargestElement(int arr[]) {
         Arrays.sort(arr);
         return arr[arr.length-1];
