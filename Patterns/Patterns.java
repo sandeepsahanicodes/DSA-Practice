@@ -187,6 +187,28 @@ public class Patterns {
             System.out.println();
         }
     }
+        static public void pattern12(int row) {
+            int space = 2*(row-1);
+            
+            for (int i = 1; i <=row; i++) {
+                // Accending Number
+                for (int j = 1; j <= i; j++) {
+                    System.out.print(j);
+                }
+                // Space
+                for (int j = 1; j <= space; j++) {
+                    System.out.print(" ");
+                }
+                   
+                 // Decending Number
+                 for (int j = i; j > 0; j--) {
+                    System.out.print(j);
+                 }
+                 System.out.println();
+                 space -= 2;
+            }
+
+    }
 
     public static void main(String[] args) {
         int t, row;
@@ -196,7 +218,7 @@ public class Patterns {
         for (int i = 0; i < t; i++) {
             System.out.print("Enter row for test case" + (i + 1) + ":");
             row = sc.nextInt();
-            pattern11(row);
+            pattern12(row);
         }
     }
 }
