@@ -233,7 +233,7 @@ public class Patterns {
         // A B C 
         // A B C D 
         // A B C D E 
-        public static void pattern14(int row) {
+        public static void pattern14A(int row) {
  
             int characterIntValue = 65;
             for (int i = 1; i <=row; i++) {
@@ -246,6 +246,38 @@ public class Patterns {
              }
         }
 
+        // A 
+        // A B 
+        // A B C 
+        // A B C D 
+        // A B C D E 
+        public static void pattern14B(int row) {
+ 
+            for (int i = 0; i < row; i++) {
+                
+                for (char ch = 'A'; ch <= 'A'+ i; ch++) {
+                    System.out.print(ch+" ");
+                }
+                System.out.println();
+             }
+        }
+        
+        // A B C D E 
+        // A B C D 
+        // A B C 
+        // A B 
+        // A 
+        public static void pattern15(int row) {
+ 
+            for (int i = 0; i < row; i++) {
+                
+                for (char ch = 'A'; ch <= 'A'+ (row-i-1); ch++) {
+                    System.out.print(ch+" ");
+                }
+                System.out.println();
+             }
+        }
+       
     public static void main(String[] args) {
         int t, row;
         Scanner sc = new Scanner(System.in);
@@ -254,7 +286,7 @@ public class Patterns {
         for (int i = 0; i < t; i++) {
             System.out.print("Enter row for test case" + (i + 1) + ":");
             row = sc.nextInt();
-            pattern14(row);
+            pattern15(row);
         }
     }
 }
