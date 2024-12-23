@@ -453,6 +453,36 @@ public class Patterns {
                 }
              }
         }
+        // * * * * * 
+        // *       * 
+        // *       * 
+        // *       * 
+        // * * * * * 
+        public static void pattern21(int row) {
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row; j++) {
+                    if (i == 0 || i == row - 1 || j == 0 || j == row - 1) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+                System.out.println();
+            }
+        }
+
+        public static void pattern22(int row) {
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < row; j++) {
+                    if (i == 0 || i == row - 1 || j == 0 || j == row - 1) {
+                        System.out.print("* ");
+                    } else {
+                        System.out.print("  ");
+                    }
+                }
+                System.out.println();
+            }
+        }
        
     public static void main(String[] args) {
         int t, row;
@@ -462,7 +492,7 @@ public class Patterns {
         for (int i = 0; i < t; i++) {
             System.out.print("Enter row for test case" + (i + 1) + ":");
             row = sc.nextInt();
-            pattern20(row);
+            pattern22(row);
         }
     }
 }
