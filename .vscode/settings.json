@@ -3,6 +3,7 @@
         "ostream": "cpp"
     },
     "java.project.sourcePaths": [
-        "Patterns"
+        "Patterns",
+        "collection-framework"
     ]
 }

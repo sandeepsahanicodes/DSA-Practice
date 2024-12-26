@@ -502,5 +502,6 @@ public class Patterns {
             row = sc.nextInt();
             pattern22(row);
         }
+        sc.close();
     }
 }
