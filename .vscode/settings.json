@@ -5,5 +5,6 @@
     "java.project.sourcePaths": [
         "Patterns",
         "collection-framework"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
