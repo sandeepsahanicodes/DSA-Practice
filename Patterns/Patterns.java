@@ -470,15 +470,23 @@ public class Patterns {
                 System.out.println();
             }
         }
-
+        
+        // 4 4 4 4 4 4 4
+        // 4 3 3 3 3 3 4
+        // 4 3 2 2 2 3 4
+        // 4 3 2 1 2 3 4
+        // 4 3 2 2 2 3 4
+        // 4 3 3 3 3 3 4
+        // 4 4 4 4 4 4 4
         public static void pattern22(int row) {
-            for (int i = 0; i < row; i++) {
-                for (int j = 0; j < row; j++) {
-                    if (i == 0 || i == row - 1 || j == 0 || j == row - 1) {
-                        System.out.print("* ");
-                    } else {
-                        System.out.print("  ");
-                    }
+            for (int i = 0; i < 2*row - 1; i++) {
+                for (int j = 0; j < 2*row - 1; j++) {
+                    int top = i;
+                    int bottom = j;
+                    int left = (2*row - 1) - 1 - i; 
+                    int right = (2*row - 1) - 1 - j;
+                    int min = Math.min(Math.min(top, bottom), Math.min(left, right));
+                    System.out.print(row-min + " ");
                 }
                 System.out.println();
             }
