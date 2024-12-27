@@ -3,8 +3,9 @@
         "ostream": "cpp"
     },
     "java.project.sourcePaths": [
+        "collection-framework",
         "Patterns",
-        "collection-framework"
+        "basic-maths"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
