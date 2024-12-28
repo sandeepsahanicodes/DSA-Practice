@@ -15,5 +15,6 @@ public class ReverseNumber {
         System.out.println("Enter a number: ");
         int n = sc.nextInt();
         System.out.println("reversedNumber number of " + n + " is: " + reverseNumber(n));
+        sc.close();
     }
 }

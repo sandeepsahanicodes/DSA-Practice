@@ -15,5 +15,6 @@ public class CountDigits {
         System.out.println("Enter a number: ");
         int n = sc.nextInt();
         System.out.println("Number of digits in " + n + " is: " + countDigits(n));
+        sc.close();
     }
 }

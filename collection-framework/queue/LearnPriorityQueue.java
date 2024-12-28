@@ -35,5 +35,6 @@ public class LearnPriorityQueue {
         // Returns the front element
         // peek() method returns the front element of the queue
         System.out.println(pqMinHeap.peek());
+        
      }
 }

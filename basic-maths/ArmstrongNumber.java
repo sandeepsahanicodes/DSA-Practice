@@ -30,5 +30,6 @@ public class ArmstrongNumber {
         } else {
             System.out.println("The number is not an Armstrong number");
         }
+        sc.close();
     }
 }
