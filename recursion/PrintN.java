@@ -1,3 +1,5 @@
+// When a function calls itself, it is called recursion.
+// Print numbers from 1 to N using recursion.
 
 public class PrintN {
     static void printN(int n) {

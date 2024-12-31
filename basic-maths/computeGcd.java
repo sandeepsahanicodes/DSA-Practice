@@ -47,9 +47,7 @@ public class computeGcd {
         int b = sc.nextInt();
 
         System.out.println("GCD of " + a + " and " + b + " is: " + computeGcd(a,b));
-
         System.out.println("GCD of " + a + " and " + b + " is: " + computeGcdOptimal(a,b));
-
         System.out.println("GCD of " + a + " and " + b + " is: " + computeGcdEuclidean(a,b));
     }
 }

@@ -4,8 +4,9 @@
     },
     "java.project.sourcePaths": [
         "collection-framework",
+        "basic-maths",
         "Patterns",
-        "basic-maths"
+        "recursion"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
