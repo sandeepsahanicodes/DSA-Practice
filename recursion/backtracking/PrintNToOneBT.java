@@ -14,5 +14,6 @@ public class PrintNToOneBT {
         System.out.println("Enter a number: ");
         int n = sc.nextInt();
         printNToOne(1, n);
+        
     }
 }

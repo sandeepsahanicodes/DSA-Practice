@@ -1,6 +1,5 @@
 package backtracking;
 
-
 public class PrintOneToNBT {
     public static void printOneToN(int i, int n) {
         if(i < 1) {
