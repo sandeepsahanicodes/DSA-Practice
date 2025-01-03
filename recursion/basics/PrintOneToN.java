@@ -1,13 +1,14 @@
+package basics;
 import java.util.Scanner;
 
-public class PrintNameNtimes {
+public class PrintOneToN {
     // Time complexity: O(n)
     // Space complexity: O(n)
     static void printName(int i,int n) {
         if(i > n) {
             return;
         }
-        System.out.println("Sandeep");
+        System.out.print(i + " ");
         printName(i+1,n);
     }
     public static void main(String[] args) {

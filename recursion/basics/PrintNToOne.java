@@ -1,3 +1,4 @@
+package basics;
 import java.util.Scanner;
 public class PrintNToOne {
     public static void printNToOne(int i, int n) {
