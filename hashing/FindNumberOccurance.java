@@ -12,6 +12,9 @@ public class FindNumberOccurance {
         }
         return count;
     } 
+    // Find the occurance of a number with using hashing.
+    // Optimal approach
+    // TC: O(N) -> For the entire array
     public static void occurrenceOptimal(int arr[]) {
         
         // Pre calculations
@@ -25,7 +28,6 @@ public class FindNumberOccurance {
                 System.out.println("Occurrence of "+arr[i]+" is "+hash[arr[i]]);
                 hash[arr[i]] = -1;
             }
-            
         }
     }
     public static void main(String[] args) {
