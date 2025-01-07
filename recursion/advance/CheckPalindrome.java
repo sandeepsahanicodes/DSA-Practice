@@ -11,7 +11,7 @@ public class CheckPalindrome {
         return isPalindrome(str, i + 1);
     }
     public static void main(String[] args) {
-        String str = "masam";
+        String str = "amanaplanacanalpanama";
         if (isPalindrome(str, 0)) {
             System.out.println("The string is a palindrome");
         } else {
