@@ -3,10 +3,11 @@
         "ostream": "cpp"
     },
     "java.project.sourcePaths": [
+        "recursion",
         "collection-framework",
         "basic-maths",
         "Patterns",
-        "recursion"
+        "hashing"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

@@ -12,9 +12,25 @@ public class FindNumberOccurance {
         }
         return count;
     } 
-    
+    public static void occurrenceOptimal(int arr[]) {
+        
+        // Pre calculations
+        int hash[] = new int[12];
+        for(int i = 0;i < arr.length;i++) {
+            hash[arr[i]] += 1;
+        }
+        // Fetch results
+        for(int i = 0;i < arr.length;i++) {
+            if(hash[arr[i]] != -1) {
+                System.out.println("Occurrence of "+arr[i]+" is "+hash[arr[i]]);
+                hash[arr[i]] = -1;
+            }
+            
+        }
+    }
     public static void main(String[] args) {
-        int arr[] = {1,1,2,2,3,3,3,4,3,4,4,5};
-        System.out.println(occurance(3, arr));
+        int arr[] = {1,2,2,2,2,2,3,4,5,6};
+        // System.out.println(occurance(3, arr));
+        occurrenceOptimal(arr);
     }
 }
