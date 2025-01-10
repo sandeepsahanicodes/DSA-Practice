@@ -18,7 +18,7 @@ public class FindNumberOccurance {
     public static void occurrenceOptimal(int arr[]) {
         
         // Pre calculations
-        int hash[] = new int[12];
+        int hash[] = new int[13];
         for(int i = 0;i < arr.length;i++) {
             hash[arr[i]] += 1;
         }
