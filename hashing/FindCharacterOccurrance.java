@@ -1,3 +1,7 @@
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
 public class FindCharacterOccurrance {
     public static void lowerCaseCharacterOccurrence(String str) {
         int hash[] = new int[26];
@@ -28,9 +32,26 @@ public class FindCharacterOccurrance {
             }
         }
     }
+
+    public static void characterOccurrenceUsingHashMap(String str) {
+        Map<Character, Integer> map = new HashMap<>();
+        // Pre compute
+        for (int i = 0; i < str.length();i++) {
+            map.put(str.charAt(i), map.getOrDefault(str.charAt(i), 0) + 1);
+        }
+        
+        // Fetching
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+    }
     public static void main(String[] args) {
-        String str = "sandeepsahani";
-        lowerCaseCharacterOccurrence(str);
-        anyCharacterOccurrence(str);
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your String: ");
+        String str = sc.nextLine();
+        // lowerCaseCharacterOccurrence(str);
+        // anyCharacterOccurrence(str);
+        characterOccurrenceUsingHashMap(str);
+        sc.close();
     }
 }

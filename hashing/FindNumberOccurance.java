@@ -1,3 +1,7 @@
+import java.util.Map;
+import java.util.Scanner;
+import java.util.HashMap;
+
 public class FindNumberOccurance {
     // Find the occurance of a number without using hashing.
     // Brute force approach
@@ -30,9 +34,34 @@ public class FindNumberOccurance {
             }
         }
     }
+
+    public static void occurrenceUsingHashMap(int arr[]) {
+        Map<Integer, Integer> map = new HashMap<>();
+        // Pre compute
+        for (int i = 0; i < arr.length;i++) {
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
+        }
+        
+        // Fetching
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " -> " + entry.getValue());
+        }
+
+
+    }
     public static void main(String[] args) {
-        int arr[] = {1,2,2,2,2,2,3,4,5,6};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the numbers of element:");
+        int n = sc.nextInt();
+        
+        int arr[] = new int[n];
+        System.out.println("Enter array elements");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
         // System.out.println(occurance(3, arr));
-        occurrenceOptimal(arr);
+        // occurrenceOptimal(arr);
+        occurrenceUsingHashMap(arr);
+        sc.close();
     }
 }
