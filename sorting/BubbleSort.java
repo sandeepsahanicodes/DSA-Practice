@@ -1,19 +1,17 @@
 import java.util.Scanner;
 
-public class SelectionSort {
-    // TC: O(n^2)
-    public static void selectionSort(int arr[], int n) {
-        for (int i = 0; i <= n - 2; i++) {
-            int min = i;
-            for(int j = i;j<= n-1;j++) {
-                if (arr[j] < arr[min]) {
-                    min = j;
+public class BubbleSort {
+    // TC: O(n^2) ~> Worse
+    // TC: O(n) ~> Best
+    public static void bubbleSort(int arr[], int n) {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = 0; j <= i - 1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                 }
             }
-            // Swap arr[i] and arr[min] index
-            int temp = arr[i];
-            arr[i] = arr[min];
-            arr[min] = temp; 
         }
     }
     public static void main(String[] args) {
@@ -26,7 +24,7 @@ public class SelectionSort {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        selectionSort(arr, n);
+        bubbleSort(arr, n);
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
         }
