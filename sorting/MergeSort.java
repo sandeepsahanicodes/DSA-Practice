@@ -3,6 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MergeSort {
+    
     public static void merge(int arr[], int l, int mid, int r) {
         List<Integer> temp = new ArrayList<>();
         int left = l;
@@ -31,6 +32,8 @@ public class MergeSort {
             arr[i] = temp.get(i - l);
         }
     }
+    // TC: O(nlog2n)
+    // SC: O(n)
     public static void mergeSort(int arr[], int l, int r) {
         // code here
         if(l >= r) {
