@@ -8,7 +8,9 @@
     "collection-framework",
     "basic-maths",
     "Patterns",
-    "sorting"
+    "sorting",
+    "Array",
   ],
-  "java.debug.settings.onBuildFailureProceed": true
+  "java.debug.settings.onBuildFailureProceed": true,
+  "github.copilot.editor.enableAutoCompletions": false
 }
